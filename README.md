@@ -1,7 +1,7 @@
 node-phpipam
 ============
 
-A simple library to aceess [phpIPAM][https://phpipam.net] API.
+A simple library to aceess [phpIPAM](https://phpipam.net) API.
 
 To use this library you will need:
 
@@ -9,7 +9,7 @@ To use this library you will need:
 * An App ID (that you can create under the *Administration* : *API* menu)
 * A valid username and password to retrieve and renew the token
 
-For API details, take a look at the official [API documentation][https://phpipam.net/api/api_documentation/].
+For API details, take a look at the official [API documentation](https://phpipam.net/api/api_documentation/).
 
 It currently implements login, token renewal and GET requests. Bug reports, feature and pull requests are welcome!
 

@@ -1,0 +1,36 @@
+{
+  "name": "node-phpipam",
+  "version": "1.0.0",
+  "description": "A simple phpIPAM client library written in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodejs dist/src/index.js",
+    "prestart": "npm run dist",
+    "dist": "nodejs ./node_modules/babel-cli/bin/babel src/*.js -d dist",
+    "test": "DEBUG=ipam:* nodejs dist/tests/simple",
+    "pretest": "npm run dist && nodejs ./node_modules/babel-cli/bin/babel tests/*.js -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tevaum/node-phpipam.git"
+  },
+  "keywords": [
+    "phpIPAM",
+    "JavaScript",
+    "NodeJS"
+  ],
+  "author": "Estêvão Samuel Procópio Amaral <tevaum@gmail.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/tevaum/node-phpipam/issues"
+  },
+  "homepage": "https://github.com/tevaum/node-phpipam#readme",
+  "dependencies": {
+    "superagent": "^3.8.3",
+    "superagent-no-cache": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

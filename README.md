@@ -28,7 +28,7 @@ let proxy = IPAM({
     password: 'password'
 });
 
-a.get('addresses/search_hostname/core')
+proxy.get('addresses/search_hostname/core')
     .then((addrs) => {
 	    console.log('OK:', addrs);
     })

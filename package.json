@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/tevaum/node-phpipam#readme",
   "dependencies": {
+    "stampit": "^4.1.2",
     "superagent": "^3.8.3",
     "superagent-no-cache": "^0.1.1"
   },

@@ -51,7 +51,7 @@ let Proxy = stampit.init(function({}, {stamp}) {
 	    .get(uri)
 	    .set('Token', options.token.value)
 	    .then((res) => {
-    		if (res.body.code == 200 && res.body.success) {
+                if (res.body.success) {
 		    //console.log('[RES]', res.body.success);
     		    return res.body.data;
     		} else {

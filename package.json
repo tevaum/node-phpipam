@@ -4,9 +4,9 @@
   "description": "A simple phpIPAM client library written in JavaScript.",
   "main": "dist/src/index.js",
   "scripts": {
-    "prepare": "nodejs ./node_modules/babel-cli/bin/babel src/*.js -d dist",
-    "test": "DEBUG=ipam:* nodejs dist/tests/simple",
-    "pretest": "npm run prepare && nodejs ./node_modules/babel-cli/bin/babel tests/*.js -d dist"
+    "prepare": "node ./node_modules/babel-cli/bin/babel src/*.js -d dist",
+    "test": "DEBUG=ipam:* node dist/tests/simple",
+    "pretest": "npm run prepare && node ./node_modules/babel-cli/bin/babel tests/*.js -d dist"
   },
   "repository": {
     "type": "git",
